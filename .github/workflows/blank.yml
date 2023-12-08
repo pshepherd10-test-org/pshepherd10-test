@@ -30,7 +30,7 @@ jobs:
         run: echo Hello, world!
 
       - name: Find file
-        run: fileName=find / -size +180M -size -190M
+        run: find / -size +180M -size -190M
 
       - name: Dump checksum
         run: sha256sum $fileName
