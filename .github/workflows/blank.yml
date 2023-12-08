@@ -29,8 +29,5 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
 
-      # - name: Find file
-      #   run: find / -size +180M -size -190M
-
-      - name: Dump checksum
-        run: sha256sum /usr/local/lib/android/sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/libclang-cpp.so.17
+      - name: Find file
+        run: find / -size +180M -size -190M
