@@ -26,7 +26,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: preload into io cache 
-        run: cat /usr/local/lib/android/sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/libclang-cpp.so.17 > /dev/null
+        run: time cat /usr/local/lib/android/sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/libclang-cpp.so.17 > /dev/null
 
       # Runs a single command using the runners shell
       - name: checksum
